@@ -23,6 +23,14 @@ function* fetchAllMovies() {
   }
 }
 
+// Gets the information for the details page
+function* setDetailsPage(action) {
+  try {
+    console.log(action.payload);
+    
+  }
+}
+
 // Create sagaMiddleware
 const sagaMiddleware = createSagaMiddleware();
 
