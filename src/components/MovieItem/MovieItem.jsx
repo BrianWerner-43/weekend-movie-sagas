@@ -14,7 +14,11 @@ function MovieItem({movie}) {
     }
 
     return (
+<<<<<<< HEAD
         <div>
+=======
+        <div data-testid="movieDetails">
+>>>>>>> 9dc6e0756292334c56372e64efd92a25410fb0db
             <h3>{movie.title}</h3>
               <img src={movie.poster} alt={movie.title}/>
         <button onClick={handleClick}>Details</button>
