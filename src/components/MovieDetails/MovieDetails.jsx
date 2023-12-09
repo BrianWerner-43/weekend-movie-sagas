@@ -4,10 +4,10 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useParams } from "react-router-dom";
 
 
-function MovieDetails() {
+function MovieDetails({}) {
 
     const movie = useSelector(store => store.currentDetails);
-    const genres = useSelector(store.genres);
+    const genres = useSelector(store => store.genres);
     const dispatch = useDispatch()
     const history = useHistory()
     const ID = useParams()
@@ -31,7 +31,18 @@ function MovieDetails() {
     return (
         <>
           <div>
-            <button onClick={backButton}>Home</button>
+            <div data-testid="movieDetails">
+                <img src={movie.poster}/>
+                <h1>{movie.title}</h1>
+                <p>{movie.description}</p>
+                <ul>
+                    {genres.map((genre, i) => (
+                        <li key={i}>{genre.category}</li>
+                    ))}
+                </ul>
+
+            <button data-testid="toList" onClick={backButton}>Home</button>
+            </div>
           </div>
         
         </>
