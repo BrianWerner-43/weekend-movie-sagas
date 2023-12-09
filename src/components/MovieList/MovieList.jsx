@@ -1,15 +1,19 @@
 import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch, useSelector, useHistory } from 'react-redux';
 import './MovieList.css'
 
 function MovieList() {
 
   const dispatch = useDispatch();
   const movies = useSelector(store => store.movies);
+  const history = useHistory()
 
   useEffect(() => {
     dispatch({ type: 'FETCH_MOVIES' });
   }, []);
+
+  // To load to the details page
+  history.push('/details')
 
   return (
     <main>
