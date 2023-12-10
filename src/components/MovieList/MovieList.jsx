@@ -20,7 +20,7 @@ function MovieList() {
     <main>
 
         <h1>MovieList</h1>
-        <div data-testid="toDetails">
+        <div>
         <section className="movies">
             {movies.map((movie, i)=> (
                 <MovieItem movie={movie} key={i}/> 

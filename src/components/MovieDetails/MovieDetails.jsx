@@ -29,10 +29,10 @@ function MovieDetails({}) {
     
 
     return (
-        <>
-          <div>
+        
+          <div data-testid="movieDetails">
             <div>
-                <img data-testid="toDetails" src={movie.poster} />
+                <img src={movie.poster} />
                 <h1>{movie.title}</h1>
                 <p>{movie.description}</p>
                 <ul>
@@ -45,7 +45,7 @@ function MovieDetails({}) {
             </div>
           </div>
         
-        </>
+        
     )
 
 

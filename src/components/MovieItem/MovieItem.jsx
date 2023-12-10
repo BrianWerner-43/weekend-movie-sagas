@@ -12,8 +12,8 @@ function MovieItem({movie}) {
     }
 
     return (
-     <div>
-        <div data-testid="movieItem">
+     <div data-testid="movieItem">
+        <div>
             <h3>{movie.title}</h3>
               <img data-testid="toDetails" src={movie.poster} alt={movie.title}/>
         <button onClick={handleClick}>Details</button>
