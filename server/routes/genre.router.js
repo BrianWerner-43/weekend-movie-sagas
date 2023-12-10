@@ -13,6 +13,7 @@ router.get('/:id', (req, res) => {
 
   pool.query(queryText, [idToGet])
   .then((result) => {
+    res.send(result.rows)
     console.log('result.rows:', result.rows)
   }).catch((error) => {
     console.log('Error with query', queryText)

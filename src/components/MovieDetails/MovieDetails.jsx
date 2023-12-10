@@ -8,6 +8,7 @@ function MovieDetails({}) {
 
     const movie = useSelector(store => store.currentDetails);
     const genres = useSelector(store => store.genres);
+    console.log(genres);
     const dispatch = useDispatch()
     const history = useHistory()
     const ID = useParams()
@@ -17,15 +18,16 @@ function MovieDetails({}) {
         history.push("/")
     }
 
+    
     useEffect(() => {
-        console.log('expect to get ids:', ID);
+        console.log('expect to get ids:', ID); 
         dispatch({
-            type: "GET_DETAILS",
+            type: "GET_GENRES",
             payload: ID.id
         })
 
     }, []);
-
+    
     
 
     return (
@@ -35,11 +37,14 @@ function MovieDetails({}) {
                 <img src={movie.poster} />
                 <h1>{movie.title}</h1>
                 <p>{movie.description}</p>
-                <ul>
+                <p> Genres:</p>
+                
+                
+                
                     {genres.map((genre, i) => (
-                        <li key={i}>{genre.category}</li>
+                        <p key={i}>{genre.category}</p>
                     ))}
-                </ul>
+                
 
             <button data-testid="toList" onClick={backButton}>Home</button>
             </div>
