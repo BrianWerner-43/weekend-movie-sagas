@@ -26,13 +26,13 @@ function MovieDetails({}) {
 
     }, []);
 
-    console.log('Details.length:', movie.length, movie);
+    
 
     return (
         <>
           <div>
-            <div data-testid="movieDetails">
-                <img src={movie.poster}/>
+            <div>
+                <img data-testid="toDetails" src={movie.poster} />
                 <h1>{movie.title}</h1>
                 <p>{movie.description}</p>
                 <ul>

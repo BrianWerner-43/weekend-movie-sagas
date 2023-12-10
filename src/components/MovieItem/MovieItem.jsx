@@ -1,11 +1,9 @@
 import MovieDetails from "../MovieDetails/MovieDetails";
-// import { useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 
-
+// This will load to the details page and dispaly the description
 function MovieItem({movie}) {
 
-    // const dispatch = useDispatch();
     const history = useHistory();
 
     const handleClick = () => {
@@ -14,15 +12,13 @@ function MovieItem({movie}) {
     }
 
     return (
-<<<<<<< HEAD
-        <div>
-=======
-        <div data-testid="movieDetails">
->>>>>>> 9dc6e0756292334c56372e64efd92a25410fb0db
+     <div>
+        <div data-testid="movieItem">
             <h3>{movie.title}</h3>
-              <img src={movie.poster} alt={movie.title}/>
+              <img data-testid="toDetails" src={movie.poster} alt={movie.title}/>
         <button onClick={handleClick}>Details</button>
         </div>
+    </div>
     )
 
 
