@@ -1,3 +1,10 @@
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Grid from '@mui/material/Unstable_Grid2';
 import MovieDetails from "../MovieDetails/MovieDetails";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useDispatch } from "react-redux";
@@ -18,13 +25,26 @@ function MovieItem({movie}) {
     }
 
     return (
-     <div data-testid="movieItem">
-        <div>
-            <h3>{movie.title}</h3>
-              <img  onClick={handleClick} data-testid="toDetails" src={movie.poster} alt={movie.title}/>
-       
-        </div>
-    </div>
+    //   Using Mateial Ui to make the poster images into cards
+        <Grid>
+        <Card sx={{ minWidth: 200, maxWidth: 200, minHeight: 450, maxHeigh: 450 }}>
+          <CardMedia
+            sx={{ height: 300 }}
+            image={movie.poster}
+            title={movie.title}
+            onClick={handleClick}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              {movie.title}
+            </Typography>
+          </CardContent>
+          <CardActions>
+            <Button variant="outlined" size="small" color="secondary" data-testid="toDetails" onClick={handleClick}>Learn More</Button>
+          </CardActions>
+        </Card>
+      </Grid>
+    
     )
 
 

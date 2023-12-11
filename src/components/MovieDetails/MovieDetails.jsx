@@ -1,14 +1,15 @@
+import { Button } from "@mui/material";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { useParams } from "react-router-dom";
 
-
+// This will get all the movie details and genres
 function MovieDetails({}) {
+
 
     const movie = useSelector(store => store.currentDetails);
     const genres = useSelector(store => store.genres);
-    console.log(genres);
     const dispatch = useDispatch()
     const history = useHistory()
     const ID = useParams()
@@ -39,14 +40,12 @@ function MovieDetails({}) {
                 <p>{movie.description}</p>
                 <p> Genres:</p>
                 
-                
-                
                     {genres.map((genre, i) => (
                         <p key={i}>{genre.category}</p>
                     ))}
-                
-
-            <button data-testid="toList" onClick={backButton}>Home</button>
+              
+             {/*styled the button in material UI  */}
+            <Button data-testid="toList" size="small" variant="contained" color="success" onClick={backButton}>🏠</Button>
             </div>
           </div>
         
