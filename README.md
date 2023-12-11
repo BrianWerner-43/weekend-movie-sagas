@@ -23,7 +23,7 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.he
 ## Installation
 
 1. The queries in the `database.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries.
-2. create a database with the name saga_movies_weekend
+2. create a database with the name `saga_movies_weekend`
 3. Clone repository
 4. Open up your editor of choice and run an `npm install`
 5. Run `npm run server` in your terminal
