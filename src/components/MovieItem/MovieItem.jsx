@@ -26,7 +26,7 @@ function MovieItem({movie}) {
 
     return (
     //   Using Mateial Ui to make the poster images into cards
-        <Grid>
+        <Grid className="card-border">
         <Card sx={{ minWidth: 200, maxWidth: 200, minHeight: 450, maxHeigh: 450 }}>
           <CardMedia
             sx={{ height: 300 }}

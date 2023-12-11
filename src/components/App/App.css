@@ -11,7 +11,7 @@
 }
 
 .List-header {
-  border: 2px solid black;
+  border: 2px ridge black;
   border-radius: 5px;
   width: 85%;
   background-color: rgb(176, 79, 224);
@@ -20,6 +20,7 @@
 }
 
 .Detail-header {
-  color: rgb(11, 84, 108);
+  color: rgb(31, 72, 27);
   border: 2px ridge rgb(6, 36, 34);
 }
+

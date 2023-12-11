@@ -38,7 +38,7 @@ function MovieDetails({}) {
                 <img src={movie.poster} />
                 <h1>{movie.title}</h1>
                 <p>{movie.description}</p>
-                <p> Genres:</p>
+                <h4> Genres:</h4>
                 
                     {genres.map((genre, i) => (
                         <p key={i}>{genre.category}</p>
