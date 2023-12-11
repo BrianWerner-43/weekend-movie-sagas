@@ -6,14 +6,20 @@
   padding: 10px;
   width: 100%;
   display: flex;
+  border: solid 2px black;
 
 }
 
 .List-header {
   border: 2px solid black;
   border-radius: 5px;
-  width: 95%;
+  width: 85%;
   background-color: rgb(176, 79, 224);
   color: rgb(17, 62, 60);
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Detail-header {
+  color: rgb(11, 84, 108);
+  border: 2px ridge rgb(6, 36, 34);
 }

@@ -23,7 +23,7 @@ function MovieDetails({}) {
     useEffect(() => {
         console.log('expect to get ids:', ID); 
         dispatch({
-            type: "GET_GENRES",
+            type: "SAGA/GET_GENRES",
             payload: ID.id
         })
 
@@ -33,7 +33,7 @@ function MovieDetails({}) {
 
     return (
         
-          <div data-testid="movieDetails">
+          <div data-testid="movieDetails" className="Detail-header">
             <div>
                 <img src={movie.poster} />
                 <h1>{movie.title}</h1>
