@@ -53,6 +53,6 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.he
 
 
 ## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. I'd like to also thank my amazing instructor Matt Black and my fellow Monnstone cohorts, you are all awesome.
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. I'd like to also thank my amazing instructor [Matt Black](https://github.com/matthew-black) and my fellow Monnstone cohorts, you are all awesome.
 
 
