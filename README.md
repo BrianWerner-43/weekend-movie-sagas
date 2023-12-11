@@ -7,7 +7,7 @@ Weekend-movie-saga
 
 _Duration: Weekend challenge_
 
-Created a movie list site that a user can select a movie an is brought to a detalis page that will display the description and the genres of that movie. This project was really focused on using React, Redux and Sagas.
+Created a movie list site that a user can select a movie and is brought to a detalis page that will display the description and the genres of that movie. This project was really focused on using React, Redux and Sagas.
 
 To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
